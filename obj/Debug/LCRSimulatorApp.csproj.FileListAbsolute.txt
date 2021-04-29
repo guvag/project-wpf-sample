@@ -1,0 +1,17 @@
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\bin\Debug\LCRSimulatorApp.exe.config
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\bin\Debug\LCRSimulatorApp.exe
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\bin\Debug\LCRSimulatorApp.pdb
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp.csprojAssemblyReference.cache
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\MainWindow.g.cs
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\App.g.cs
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp_MarkupCompile.cache
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp_MarkupCompile.lref
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\MainWindow.baml
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp.g.resources
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp.Properties.Resources.resources
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp.csproj.GenerateResource.cache
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp.csproj.CoreCompileInputs.cache
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp.exe
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\LCRSimulatorApp.pdb
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\Views\GameView.g.cs
+C:\Users\6003916\source\repos\LCRSimulatorApp\LCRSimulatorApp\LCRSimulatorApp\obj\Debug\Views\GameView.baml

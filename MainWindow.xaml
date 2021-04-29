@@ -1,0 +1,55 @@
+﻿<Window x:Class="LCRSimulatorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LCRSimulatorApp"
+        mc:Ignorable="d"
+        Title="LCR Game" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="White" Panel.ZIndex="400" Width="600" Focusable="False">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.ColumnSpan="2" Height="30" Focusable="False"/>
+            <Label Grid.Row="1" FontSize="20" Content="LCR Simulator Application" HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+
+            <Grid Grid.Row="2" Background="White" Panel.ZIndex="400" Width="600" Focusable="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="1" Content="Number of Players: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBox  Grid.Row="0" Grid.Column="2" Name="PlayerNum" Text="{Binding PlayerNumber, UpdateSourceTrigger=PropertyChanged}" />
+                <Label Grid.Row="2" Grid.Column="1" Content="Number of Games: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBox  Grid.Row="2" Grid.Column="2" Name="GameNum" Text="{Binding GameNumber, UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
+            <DockPanel Grid.Row="4" HorizontalAlignment="Center" Focusable="False">
+                <Button Name="btnStart" Command="{Binding StartCommand}" Grid.Row="2" FontSize="14">
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Center" Text="Start"/>
+                    </StackPanel>
+                </Button>
+               
+            </DockPanel>
+            <TextBlock  Grid.Row="5" Grid.ColumnSpan="2" Margin="4" Text="{Binding Error}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Red"/>
+        </Grid>
+    </Grid>
+</Window>
