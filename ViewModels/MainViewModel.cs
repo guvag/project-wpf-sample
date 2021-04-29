@@ -264,12 +264,18 @@ namespace LCRSimulatorApp.ViewModels
                         TurnNumber = turn;
                         PlayerNumberInTurn = player.PlayerIndex;
                         ChipsNumberInTurn = player.ChipNumber;
+                        RollDiceResults = "";
 
                         Console.WriteLine(string.Format("Player {0}, Chips: {1}", player.PlayerIndex, player.ChipNumber));
 
                         string rollResult = "";
 
                         int diceNumber = 3;
+                        if (player.ChipNumber < 3)
+                        {
+                            diceNumber = player.ChipNumber;
+                        }
+                        
 
                         for (int i=0; i < diceNumber; i++)
                         {
