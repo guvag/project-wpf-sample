@@ -57,7 +57,6 @@
     </ApplicationDefinition>
     <Compile Include="Models\Match.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="ViewModels\GameViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\GameView.xaml.cs">
       <DependentUpon>GameView.xaml</DependentUpon>

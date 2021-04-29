@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LCRSimulatorApp"
         mc:Ignorable="d"
-        Title="LCR Game" Height="450" Width="800">
+        Title="LCR Game" Height="800" Width="1024">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -19,6 +19,7 @@
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="20" />
+                <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
@@ -50,6 +51,55 @@
                
             </DockPanel>
             <TextBlock  Grid.Row="5" Grid.ColumnSpan="2" Margin="4" Text="{Binding Error}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Red"/>
+
+            <Grid Grid.Row="6" Background="White" Panel.ZIndex="400" Width="600" Focusable="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="Turn: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="0" Grid.Column="1" Margin="10,10" Text="{Binding TurnNumber}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Content="Player: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="1" Grid.Column="1" Margin="10,10" Text="{Binding PlayerNumberInTurn, NotifyOnSourceUpdated=True}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+                
+                <Label Grid.Row="2" Grid.Column="0" Content="Chips: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="2" Grid.Column="1" Margin="10,10" Text="{Binding ChipsNumberInTurn}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+                
+                <Label Grid.Row="3" Grid.Column="0" Content="Center Chips: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="3" Grid.Column="1" Margin="10,10" Text="{Binding CenterChipsNumberInTurn}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+                
+                <Label Grid.Row="4" Grid.Column="0" Content="Roll Dice: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="4" Grid.Column="1" Margin="10,10" Text="{Binding RollDiceResults}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+                
+                <Label Grid.Row="0" Grid.Column="2" Content="Players: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="0" Grid.Column="3" Margin="10,10" Text="{Binding GamePlayersNumber}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+                
+                <Label Grid.Row="1" Grid.Column="2" Content="Match: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="1" Grid.Column="3" Margin="10,10" Text="{Binding MatchNumberInTurn}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+                 
+                <Label Grid.Row="2" Grid.Column="2" Content="Shortest Turns: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="2" Grid.Column="3" Margin="10,10" Text="{Binding ShortestTurnNumber}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+               
+                <Label Grid.Row="3" Grid.Column="2" Content="Longest Turns: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="3" Grid.Column="3" Margin="10,10" Text="{Binding LongestTurnNumber}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+                
+                <Label Grid.Row="4" Grid.Column="2" Content="Average: " HorizontalAlignment="Center" Margin="10,10" Focusable="False" />
+                <TextBlock  Grid.Row="4" Grid.Column="3" Margin="10,10" Text="{Binding Average}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Blue"/>
+                
+            </Grid>
+
         </Grid>
+        
+        
     </Grid>
 </Window>
