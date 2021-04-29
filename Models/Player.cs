@@ -9,10 +9,10 @@ namespace LCRSimulatorApp.Models
     public class Player
     {
         public int PlayerIndex { get; set; }
+
         public int ChipNumber { get; set; }
 
         public bool CanPlay { get; set; }
-
-        public bool isTheWinner { get; set; }
+        
     }
 }

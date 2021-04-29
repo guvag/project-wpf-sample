@@ -14,9 +14,9 @@ namespace LCRSimulatorApp.Models
 
         public int ShortestTurnNumber { get; set; }
 
-        public int LargestTurnNumber { get; set; }
+        public int LongestTurnNumber { get; set; }
 
-        public int Average { get; set; }
+        public double Average { get; set; }
 
         public Dictionary<int, string> Dice {get;set;}
 
